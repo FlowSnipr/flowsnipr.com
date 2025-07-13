@@ -1,81 +1,97 @@
-/* GLOBAL STYLES */
-body {
+/* General Reset */
+* {
   margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(135deg, #0a0f1e, #1a213a);
-  color: white;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* NAVBAR STYLING */
+body {
+  background-color: #0e0f1c;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+/* Navbar */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 40px;
-  background: #0e0f1c;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
-
-.logo-container {
-  display: flex;
-  align-items: center;
+  padding: 30px 60px;
+  background-color: #0e0f1c;
 }
 
 .logo {
-  height: 60px;  /* You can increase to 70 or 80 if desired */
-  width: auto;
-  transition: transform 0.3s ease, filter 0.3s ease;
+  height: 100px;
+  max-height: 120px;
 }
 
-.logo:hover {
-  transform: scale(1.05);
-  filter: brightness(1.2);
-}
-
-/* NAV LINKS */
 .nav-links {
-  list-style: none;
   display: flex;
-  gap: 25px;
-  margin: 0;
-  padding: 0;
+  gap: 40px;
+  list-style: none;
 }
 
-.nav-links li a {
-  color: white;
+.nav-links a {
+  color: #ffffff;
   text-decoration: none;
+  font-size: 18px;
   font-weight: 500;
-  font-size: 16px;
-  transition: color 0.2s ease;
+  transition: color 0.3s ease;
 }
 
-.nav-links li a:hover {
-  color: #1de0ff;
+.nav-links a:hover {
+  color: #00bfff;
 }
 
-/* HERO SECTION */
+/* Hero Section */
 .hero {
   text-align: center;
-  padding: 100px 20px 60px;
+  margin-top: 60px;
+  padding: 0 20px;
 }
 
-.hero h1 {
-  font-size: 3rem;
-  color: #00b4ff;
+.hero .highlight {
+  font-size: 36px;
+  font-weight: bold;
+  color: #00bfff;
 }
 
-/* CONTENT SECTIONS */
-.info-section {
-  padding: 40px 20px;
+.subtitle {
+  font-size: 18px;
+  margin-top: 10px;
+  color: #cccccc;
+}
+
+/* Main Content */
+.content {
   max-width: 800px;
-  margin: auto;
+  margin: 60px auto;
+  padding: 0 20px;
 }
 
-/* FOOTER */
+.content h2 {
+  font-size: 24px;
+  margin-bottom: 16px;
+  color: #ffffff;
+}
+
+.how-it-works {
+  list-style: disc;
+  padding-left: 20px;
+  margin-bottom: 40px;
+}
+
+.how-it-works li {
+  margin-bottom: 12px;
+}
+
+/* Footer */
 footer {
   text-align: center;
-  padding: 20px;
-  color: #aaa;
+  padding: 30px 20px;
+  font-size: 14px;
+  color: #999999;
+  border-top: 1px solid #333;
+  margin-top: 60px;
 }
