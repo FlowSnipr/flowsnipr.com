@@ -1,44 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FlowSnipr</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Flow Snipr</title>
   <style>
     body {
       margin: 0;
       padding: 0;
-      background-color: #0e0e0e;
+      background-color: #0e1117; /* Dark background to match logo */
       color: #ffffff;
       font-family: 'Segoe UI', sans-serif;
       display: flex;
       flex-direction: column;
-      justify-content: center;
       align-items: center;
-      height: 100vh;
       text-align: center;
     }
+
+    header {
+      margin-top: 60px;
+    }
+
+    img.logo {
+      max-width: 200px;
+      height: auto;
+      margin-bottom: 20px;
+    }
+
     h1 {
-      font-size: 3em;
-      margin: 0.2em 0;
+      font-size: 2.8em;
+      color: #2aa8ff; /* Light blue for branding */
+      margin: 0.3em 0 0.1em 0;
     }
-    p {
+
+    p.subheadline {
       font-size: 1.2em;
-      max-width: 600px;
-      line-height: 1.6;
+      max-width: 700px;
+      margin: 0 auto 3em auto;
+      color: #cccccc;
+      line-height: 1.5;
     }
+
+    .how-it-works {
+      max-width: 800px;
+      padding: 20px;
+    }
+
+    .how-it-works h2 {
+      font-size: 1.8em;
+      margin-bottom: 1em;
+      color: #ffffff;
+    }
+
+    .step {
+      margin-bottom: 1.5em;
+    }
+
+    .step-title {
+      font-size: 1.3em;
+      color: #2aa8ff;
+      font-weight: bold;
+      margin-bottom: 0.3em;
+    }
+
     footer {
-      position: absolute;
-      bottom: 20px;
+      margin-top: 80px;
+      padding-bottom: 20px;
       font-size: 0.9em;
       opacity: 0.6;
     }
   </style>
 </head>
 <body>
-  <h1>FlowSnipr</h1>
-  <p>Sniping smarter swing trades with ML-powered options flow & technicals.  
-     Join us soon for live insights, tools, and edge in the markets.</p>
-  <footer>© 2025 FlowSnipr</footer>
+  <header>
+    <img src="FlowSnipr Logo.png" alt="Flow Snipr Logo" class="logo" />
+    <h1>Sniping Alpha from Flow.</h1>
+    <p class="subheadline">
+      Machine learning meets options flow to find tomorrow’s trades today.
+    </p>
+  </header>
+
+  <section class="how-it-works">
+    <h2>How It Works</h2>
+    <div class="step">
+      <div class="step-title">Track the Flow</div>
+      <p>We monitor unusual options activity and smart money signals.</p>
+    </div>
+    <div class="step">
+      <div class="step-title">Apply Machine Learning</div>
+      <p>Our models filter the noise and surface high-probability setups.</p>
+    </div>
+    <div class="step">
+      <div class="step-title">Deliver Clean Picks</div>
+      <p>You get actionable trade ideas with technical backing.</p>
+    </div>
+  </section>
+
+  <footer>© 2025 Flow Snipr</footer>
 </body>
 </html>
