@@ -90,15 +90,23 @@ body {
 }
 
 .content h2 {
-  font-size: 24px;
-  margin-bottom: 16px;
+  font-size: 32px;
+  margin-bottom: 24px;
   color: #ffffff;
+  text-align: center;
 }
 
 .how-it-works {
-  list-style: disc;
-  padding-left: 20px;
+  list-style: none;
+  padding-left: 0;
   margin-bottom: 40px;
+  font-size: 20px;
+  text-align: center;
+  line-height: 1.8;
+}
+
+.how-it-works li {
+  margin-bottom: 16px;
 }
 
 .how-it-works li {
