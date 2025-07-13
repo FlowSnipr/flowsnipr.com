@@ -10,7 +10,7 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #ffffff;
   line-height: 1.6;
-  padding-top: 80px; /* Matches nav height below */
+  padding-top: 80px; /* Matches nav height */
 }
 
 /* Navbar */
