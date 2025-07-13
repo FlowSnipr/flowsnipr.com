@@ -10,22 +10,23 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #ffffff;
   line-height: 1.6;
-  padding-top: 90px; /* Offset for fixed navbar height */
+  padding-top: 100px; /* Adjusted for new navbar height */
 }
 
 /* Navbar */
 .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 60px;
-  background-color: #0e0f1c;
-  position: fixed;         /* Make it fixed */
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
+  background-color: #0e0f1c;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
   z-index: 1000;
-  border-bottom: 1px solid #1a1a2f; /* Optional line for separation */
+  border-bottom: 1px solid #1a1a2f;
+  height: 80px; /* Compact height */
 }
 
 .logo-container {
@@ -34,10 +35,11 @@ body {
 }
 
 .logo {
-  width: 300px;
-  height: auto;
-  display: block;
-  max-width: 100%;
+  height: 60px;        /* Keeps visible size strong */
+  width: auto;
+  max-height: 80px;
+  object-fit: contain;
+  margin-left: 5px;
 }
 
 /* Navigation Links */
@@ -53,7 +55,6 @@ body {
   font-size: 18px;
   font-weight: 500;
   transition: color 0.3s ease;
-  line-height: 1;
   padding-top: 5px;
 }
 
@@ -64,7 +65,7 @@ body {
 /* Hero Section */
 .hero {
   text-align: center;
-  margin-top: 60px;
+  margin-top: 40px;
   padding: 0 20px;
 }
 
