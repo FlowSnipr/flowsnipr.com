@@ -27,11 +27,13 @@ body {
 }
 
 .logo {
-  height: 80px;       /* You can adjust this to 100px or 60px based on preference */
-  width: auto;
+  width: 180px;       /* 🔧 Adjust to 200px, 220px, etc. as needed */
+  height: auto;
   margin-left: 10px;
+  max-width: none;    /* Prevent scaling limits */
 }
 
+/* Navigation Links */
 .nav-links {
   display: flex;
   gap: 40px;
