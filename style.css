@@ -1,3 +1,4 @@
+/* GLOBAL STYLES */
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
@@ -5,40 +6,56 @@ body {
   color: white;
 }
 
+/* NAVBAR STYLING */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
-  background-color: #0a0f1e;
+  padding: 20px 40px;
+  background: #0e0f1c;
   position: sticky;
   top: 0;
+  z-index: 1000;
 }
 
-.logo img {
-  height: 40px;
+.logo-container {
+  display: flex;
+  align-items: center;
 }
 
+.logo {
+  height: 60px;  /* You can increase to 70 or 80 if desired */
+  width: auto;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+  filter: brightness(1.2);
+}
+
+/* NAV LINKS */
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 1.5rem;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
 }
 
-.nav-links a {
+.nav-links li a {
   color: white;
   text-decoration: none;
   font-weight: 500;
+  font-size: 16px;
+  transition: color 0.2s ease;
 }
 
-.nav-links .signup {
-  background: #06b6d4;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
-  color: #0a0f1e;
-  font-weight: bold;
+.nav-links li a:hover {
+  color: #1de0ff;
 }
 
+/* HERO SECTION */
 .hero {
   text-align: center;
   padding: 100px 20px 60px;
@@ -49,12 +66,14 @@ body {
   color: #00b4ff;
 }
 
+/* CONTENT SECTIONS */
 .info-section {
   padding: 40px 20px;
   max-width: 800px;
   margin: auto;
 }
 
+/* FOOTER */
 footer {
   text-align: center;
   padding: 20px;
