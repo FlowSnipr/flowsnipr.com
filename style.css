@@ -27,10 +27,11 @@ body {
 }
 
 .logo {
-  width: 180px;       /* 🔧 Adjust to 200px, 220px, etc. as needed */
+  width: 300px;       /* Larger logo for visibility */
   height: auto;
+  display: block;
+  max-width: 100%;
   margin-left: 10px;
-  max-width: none;    /* Prevent scaling limits */
 }
 
 /* Navigation Links */
