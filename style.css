@@ -10,6 +10,7 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #ffffff;
   line-height: 1.6;
+  padding-top: 90px; /* Offset for fixed navbar height */
 }
 
 /* Navbar */
@@ -17,8 +18,14 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 60px;
+  padding: 15px 60px;
   background-color: #0e0f1c;
+  position: fixed;         /* Make it fixed */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  border-bottom: 1px solid #1a1a2f; /* Optional line for separation */
 }
 
 .logo-container {
@@ -27,11 +34,10 @@ body {
 }
 
 .logo {
-  width: 300px;       /* Larger logo for visibility */
+  width: 300px;
   height: auto;
   display: block;
   max-width: 100%;
-  margin-left: 10px;
 }
 
 /* Navigation Links */
@@ -47,6 +53,8 @@ body {
   font-size: 18px;
   font-weight: 500;
   transition: color 0.3s ease;
+  line-height: 1;
+  padding-top: 5px;
 }
 
 .nav-links a:hover {
