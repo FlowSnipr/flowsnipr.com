@@ -57,6 +57,7 @@ body {
   font-weight: 500;
   transition: color 0.3s ease;
   padding-top: 5px;
+  cursor: pointer;
 }
 
 .nav-links a:hover {
