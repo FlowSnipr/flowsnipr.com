@@ -119,3 +119,12 @@ footer {
   border-top: 1px solid #333;
   margin-top: 60px;
 }
+
+.nav-links li img,
+.nav-links li:empty {
+  display: none !important;
+  visibility: hidden;
+  width: 0 !important;
+  height: 0 !important;
+  overflow: hidden;
+}
