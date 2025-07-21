@@ -153,3 +153,38 @@ footer {
     padding-top: 0;
   }
 }
+
+@media (max-width: 768px) {
+  body {
+    padding-top: 140px; /* Increase padding to match expanded nav height */
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 20px;
+    height: auto;
+  }
+
+  .logo-container {
+    margin-bottom: 10px;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .logo {
+    height: 50px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+  }
+
+  .nav-links a {
+    font-size: 16px;
+    padding: 0;
+  }
+}
