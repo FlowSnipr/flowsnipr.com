@@ -63,6 +63,19 @@ body {
   color: #00bfff;
 }
 
+/* X Logo Icon */
+.x-logo {
+  height: 24px;
+  width: auto;
+  filter: brightness(0) invert(1); /* make icon white */
+  transition: transform 0.2s ease;
+  vertical-align: middle;
+}
+
+.x-logo:hover {
+  transform: scale(1.1);
+}
+
 /* Hero Section */
 .hero {
   text-align: center;
@@ -103,10 +116,6 @@ body {
   font-size: 20px;
   text-align: center;
   line-height: 1.8;
-}
-
-.how-it-works li {
-  margin-bottom: 16px;
 }
 
 .how-it-works li {
